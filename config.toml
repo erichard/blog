@@ -1,15 +1,17 @@
 BaseURL = "https://blog.erichard.info/"
 languageCode = "fr-fr"
-title = "Erichard blog"
+title = "Erwan Richard"
 theme = "hugo-type-theme"
 disqusShortname = ""
 googleAnalytics = ""
 paginate = 10
 relativeURLs = false
+enableRobotsTXT = true
+pygmentsCodeFences = true
 
 [params]
     author = "Erwan Richard"
-    description = "Technique mais pas que&hellip;"
+    description = "Développeur PHP depuis 2006"
     # The keywords will be added as a meta tag. Delimit them with a comma.
     keywords = "blog tech php"
     # Either show custom avatar on the top
@@ -22,13 +24,13 @@ relativeURLs = false
     # To add a header background to the main site, save your image under static/img/.
     # If now image path is provided, a orange background will be shown instead.
     headerImage = ""
-    copyright = "Publié selon les termes de la [Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)"
+    copyright = "Publié selon les termes de la [Licence Creative Commons BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)"
 
     [params.social]
         # Insert your accout name and the icon will be shown in the right menu
         rss = false
         homepage = true
-        email = "erwan.richard@protonmail.com"
+        email = ""
         behance = ""
         bitbucket  =""
         dribbble = ""

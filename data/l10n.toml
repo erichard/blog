@@ -1,18 +1,18 @@
 # Pagination buttons
-previous = "Prev"
-next = "Next"
+previous = "Précédent"
+next = "Suivant"
 
 # Post list
-readingTime = "minute read" # e.g. 3 minute read
-continueReading = "Continue reading"
+readingTime = "minute de lecture" # e.g. 3 minute read
+continueReading = "Continuer la lecture"
 
 # 404.html
-pageNotFoundTitle = "Page not found"
-pageNotFoundSubtitle = "Sorry, the requested page wasn’t found on the server."
+pageNotFoundTitle = "Page introuvable"
+pageNotFoundSubtitle = "Désolé, la page n'existe pas sur le serveur."
 
 # Social networks
 # Text will beshown while hovering the navigation icons
-rssSubscribe  = "Subcribe"
+rssSubscribe  = "S'abonner"
 email = "Email"
 behance = "Behance"
 bitbucket = "Bitbucket"
