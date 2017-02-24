@@ -11,11 +11,13 @@ Un retour d'expérience et un guide de mise en place de Docker pour les dévelop
 
 Un peu de context pour ceux qui le souhaite. Vous pouvez directement passez à la [partie technique](#tech).
 
-Retour en juin 2015. Notre équipe se compose de huit développeurs et deux intégrateurs. Nous travaillons sur plusieurs nouveaux projets client simultanément et assurons la maintenance évolutive et corrective des projets terminés.
+Je suis développeur PHP/Symfony pour l'agence [Le Phare](http://www.lephare.com/) depuis 2010.
+
+En 2015, notre équipe se compose de huit développeurs et deux intégrateurs. Nous travaillons sur plusieurs nouveaux projets client simultanément et assurons la maintenance évolutive et corrective des projets terminés.
 
 Chaque projet est pris en charge par une équipe composée au minimum d'un chef de projet, d'un lead developer et d'un intégrateur.
 
-En juin 2015, nous avions une vingtaine de projets actifs en maintenance et une petite dizaine de projets en cours de réalisation. Environ une trentaine de projets actifs. Au Phare, chaque développeur garde la charge des projets dont il est le lead developer. Il peut donc intervenir sur 5 ou 6 projets dans sa semaine de travail.
+A cette période, nous avions une vingtaine de projets actifs en maintenance et une petite dizaine de projets en cours de réalisation. Environ une trentaine de projets actifs. Au Phare, chaque développeur garde la charge des projets dont il est le lead developer. Il peut donc intervenir sur 5 ou 6 projets dans sa semaine de travail.
 
 Les projets sont développés avec Symfony et notre couche Faros avec des prérequis techniques évoluant selon les versions stables de PHP, MySQL et autres services. Parmi la trentaine de projets fait avec Symfony, nous avons 4 architectures techniques différentes.
 
@@ -24,9 +26,9 @@ Les projets sont développés avec Symfony et notre couche Faros avec des prére
  * Debian 8, PHP 5.6, Apache 2.4, Postgresql 9.4
  * Debian 8, PHP 5.6, Apache 2.4, Postgresql 9.5
 
-Durant 4 ans, l'installation, la configuration et la maintenance des postes de dev étaient laissées à la charge des développeurs. Nous avions alors toutes sortes d'installations et d'architectures. Des MAMP, apache/mod-php, apache/php-fpm, des flemmards avec le serveur HTTP de PHP (c'est moi !), des geeks compilant leur propre PHP, bref un joyeux bordel !
+Jusqu'à présent, l'installation, la configuration et la maintenance des postes de dev étaient laissées à la charge des développeurs. Nous avions alors toutes sortes d'installations et d'architectures. Des MAMP, apache/mod-php, apache/php-fpm, des flemmards avec le serveur HTTP de PHP (c'est moi !), des geeks compilant leur propre PHP, bref un joyeux bordel !
 
-Evidemment avec une telle organisation nous avons connu quelques plantages en production simplement pour avoir utilisé des fonctionnalités apparues avec PHP 5.5 et/ou 5.6 alors que le serveur de production était en 5.4&hellip; Pour éviter ces problèmes nous avons donc choisi de développer avec un environnement le plus proche des serveurs de production. Mais comment faire pour installer plusieurs versions de PHP, plusieurs serveurs web et plusieurs bases de données sur la même machine ?
+Evidemment avec une telle organisation nous avons connu quelques plantages en production simplement pour avoir utilisé des fonctionnalités apparues avec PHP 5.5 ou 5.6 alors que le serveur de production était en 5.4&hellip; Pour éviter ces problèmes nous avons donc choisi de développer avec un environnement le plus proche des serveurs de production. Mais comment faire pour installer plusieurs versions de PHP, plusieurs serveurs web et plusieurs bases de données sur la même machine ?
 
 Après avoir essayé Vagrant puis PuPHPet nous avons finalement choisi d'utiliser Docker. Voici un petit guide de survie de Docker en environnement de dev.
 
