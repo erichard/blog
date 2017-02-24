@@ -1,0 +1,49 @@
+BaseURL = "https://blog.erichard.info/"
+languageCode = "fr-fr"
+title = "Erichard blog"
+theme = "hugo-type-theme"
+disqusShortname = ""
+googleAnalytics = ""
+paginate = 10
+relativeURLs = false
+
+[params]
+    author = "Erwan Richard"
+    description = "Technique mais pas que&hellip;"
+    # The keywords will be added as a meta tag. Delimit them with a comma.
+    keywords = "blog tech php"
+    # Either show custom avatar on the top
+    # left by adding the filename in below
+    avatar = "img/avatar.png"
+    # or use Gravatar by adding your email address to generate a unique avatar
+    gravatar = "erwan.richard@protonmail.com"
+
+    headerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>Remove all header text in **config.toml** to disable this feature."
+    # To add a header background to the main site, save your image under static/img/.
+    # If now image path is provided, a orange background will be shown instead.
+    headerImage = ""
+    copyright = "Publié selon les termes de la [Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)"
+
+    [params.social]
+        # Insert your accout name and the icon will be shown in the right menu
+        rss = false
+        homepage = true
+        email = "erwan.richard@protonmail.com"
+        behance = ""
+        bitbucket  =""
+        dribbble = ""
+        facebook = ""
+        flickr = ""
+        github = "erichard"
+        googleplus = ""
+        instagram = ""
+        linkedin = ""
+        pinterest = ""
+        reddit = ""
+        soundcloud = ""
+        stackexchange = ""
+        steam = ""
+        tumblr = ""
+        twitter = "dhalsimfr"
+        wordpress = ""
+        youtube = ""
