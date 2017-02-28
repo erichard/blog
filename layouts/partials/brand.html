@@ -1,0 +1,8 @@
+{{ with .Site.Params.gravatar -}}
+<a class="pure-menu-heading brand" href="/">
+    <img src="https://www.gravatar.com/avatar/{{ . | md5 }}?s=100" alt=""/>
+</a>
+{{- end }}
+{{ with .Site.Params.brand }}
+<a class="pure-menu-heading brand" href="/">{{ . | safeHTML }}</a>
+{{ end }}

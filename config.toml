@@ -1,51 +1,46 @@
 BaseURL = "https://blog.erichard.info/"
 languageCode = "fr-fr"
 title = "Erwan Richard"
-theme = "hugo-type-theme"
-disqusShortname = ""
-googleAnalytics = ""
+theme = "blackburn"
 paginate = 10
 relativeURLs = false
 enableRobotsTXT = true
-pygmentsCodeFences = true
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
 
 [params]
+    brand = "@erichard"
     author = "Erwan Richard"
     description = "Développeur PHP depuis 2006"
-    # The keywords will be added as a meta tag. Delimit them with a comma.
     keywords = "blog tech php"
-    # Either show custom avatar on the top
-    # left by adding the filename in below
-    avatar = "img/avatar.png"
-    # or use Gravatar by adding your email address to generate a unique avatar
     gravatar = "erwan.richard@protonmail.com"
+    copyright = "Licence [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+    dateFormat = "02/01/2006"
+    highlightjs = "androidstudio"
+    custom_css = ["css/my.css"]
 
-    headerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>Remove all header text in **config.toml** to disable this feature."
-    # To add a header background to the main site, save your image under static/img/.
-    # If now image path is provided, a orange background will be shown instead.
-    headerImage = ""
-    copyright = "Publié selon les termes de la [Licence Creative Commons BY-SA 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)"
+[social]
+    github = "erichard"
+    twitter = "dhalsimfr"
 
-    [params.social]
-        # Insert your accout name and the icon will be shown in the right menu
-        rss = false
-        homepage = true
-        email = ""
-        behance = ""
-        bitbucket  =""
-        dribbble = ""
-        facebook = ""
-        flickr = ""
-        github = "erichard"
-        googleplus = ""
-        instagram = ""
-        linkedin = ""
-        pinterest = ""
-        reddit = ""
-        soundcloud = ""
-        stackexchange = ""
-        steam = ""
-        tumblr = ""
-        twitter = "dhalsimfr"
-        wordpress = ""
-        youtube = ""
+[menu]
+  [[menu.main]]
+    name = "Accueil"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Articles"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 10
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "A propos"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 100
+    identifier = "about"
+    url = "/about/"

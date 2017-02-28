@@ -1,11 +1,12 @@
-+++
-date = "2017-02-24T13:39:46+02:00"
-tags = ["docker", "php"]
-title = "Docker pour les développeurs PHP"
-description = "Un retour d'expérience et un guide de mise en place de Docker pour les développeurs PHP mais pas que&hellip;"
-+++
+---
+title: "Docker pour les développeurs PHP"
+tags: [docker, php]
+date: 2017-02-24
+---
 
-Un retour d'expérience et un guide de mise en place de Docker pour les développeurs PHP mais pas que.
+Un retour d'expérience et un guide de mise en place de Docker pour les développeurs PHP mais pas que&hellip;
+
+<!--more-->
 
 ## Retour en 2015
 
@@ -67,7 +68,7 @@ services:
     adminer:
         image: dehy/adminer
         environment:
-            VIRTUAL_HOST: adminer.docker, adminer.$DOCKER_HOST_SUFFIX
+            VIRTUAL_HOST: adminer.docker
         networks:
             - web
             - database
@@ -87,13 +88,7 @@ services:
             - web
             - mail
         environment:
-            VIRTUAL_HOST: maildev.docker, maildev.$DOCKER_HOST_SUFFIX
-        command: bin/maildev --web 80 --smtp 25 --outgoing-host smtp-relay.gmail.com --outgoing-secure
-
-    memcached:
-        image: memcached:1.4
-        networks:
-            - memcached
+            VIRTUAL_HOST: maildev.docker
 
 networks:
     web:
@@ -101,8 +96,6 @@ networks:
     mail:
         driver: bridge
     database:
-        driver: bridge
-    memcached:
         driver: bridge
 
 volumes:
@@ -134,10 +127,6 @@ Nos containers de base de données Postgres basés sur les images officielles.
 
 Maildev est un serveur SMTP qui affiche les mails envoyés dans une interface web à la gmail. Il peut être configuré pour autoriser le relai vers un autre SMTP.
 
-#### memcached
-
-Un serveur de cache clé/valeur basé sur les images officielles.
-
 ### Les réseaux
 
 La stack générique définit quatre réseaux docker. Tous les containers du même réseau sont capables de communiquer entre eux.
@@ -147,8 +136,6 @@ Le réseau **web** expose tous les containers qui exposent une interface web.
 Le réseau **database** expose tous les containers de base de données.
 
 Le réseau **mail** expose le serveur SMTP.
-
-Le réseau **memcached** expose le serveur memcached.
 
 ## <a name="stack-projet"></a> La stack projet
 
@@ -163,7 +150,6 @@ services:
         networks:
             - default
             - database
-            - memcached
             - mail
         volumes:
             - .:/var/www/symfony
@@ -178,7 +164,7 @@ services:
         volumes:
             - ./var/logs/apache:/var/log/apache2
         environment:
-            VIRTUAL_HOST: example.docker,example.$DOCKER_HOST_SUFFIX
+            VIRTUAL_HOST: example.docker
             CERT_NAME: generic
             HTTPS_METHOD: noredirect
 
@@ -192,9 +178,7 @@ networks:
     mail:
         external:
             name: dev_mail
-    memcached:
-        external:
-            name: dev_memcached
+
 ```
 
 ### Les images utilisées
