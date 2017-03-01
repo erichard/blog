@@ -8,11 +8,13 @@ Un retour d'expérience et un guide de mise en place de Docker pour les dévelop
 
 <!--more-->
 
+> *TL;DR*: Pour les plus pressés les configurations complètes sont disponibles dans le dépôt github [le-phare/docker-php-dev-env](https://github.com/le-phare/docker-php-dev-env).
+
 ## Retour en 2015
 
 Un peu de context pour ceux qui le souhaitent sinon vous pouvez directement passez à la [partie technique](#tech).
 
-Je suis développeur PHP/Symfony pour l'agence [Le Phare](http://www.lephare.com/) depuis 2010.
+Je suis développeur PHP/Symfony à l'agence [Le Phare](http://www.lephare.com/) depuis 2010.
 
 En 2015, notre équipe se compose de huit développeurs et deux intégrateurs. Nous travaillons sur plusieurs nouveaux projets client simultanément et assurons la maintenance évolutive et corrective des projets terminés.
 
@@ -206,8 +208,6 @@ Le réseau **default** sert à faire communiquer les containers php et Apache, i
 ## Conclusion
 
 Docker permet une isolation complète des composants d'une application web. Les concepts peuvent paraîtres complexes au premier coup d'oeil (et ils le sont) mais cela vaut le coup de persévérer et de maîtriser l'outil. Deux ans après nos premiers pas, il n'a jamais été aussi facile de monter un environnement de développement au Phare qui soit aussi proche des conditions de production.
-
-Des exemples sont disponibles sur le profil github de l'agence.
 
 ## Et après ?
 
