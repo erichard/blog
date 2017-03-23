@@ -38,9 +38,14 @@ enableRobotsTXT = true
     weight = 10
     identifier = "post"
     url = "/post/"
-  [[menu.main]]
-    name = "A propos"
-    pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 100
-    identifier = "about"
-    url = "/about/"
+  # [[menu.main]]
+  #   name = "A propos"
+  #   pre = "<i class='fa fa-user fa-fw'></i>"
+  #   weight = 100
+  #   identifier = "about"
+  #   url = "/about/"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
