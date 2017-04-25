@@ -2,6 +2,7 @@
 title: "Une config Docker performante sous OSX"
 tags: [docker, mac, osx, performance]
 date: 2017-03-23
+ghcommentid: "1"
 ---
 
 Docker sous mac c'est bien mais avec des performances décentes c'est mieux.
