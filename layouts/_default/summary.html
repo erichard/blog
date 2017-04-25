@@ -1,12 +1,12 @@
-<article>
+<article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <h2 itemprop="name"><a itemprop="url" href="{{ .Permalink }}">{{ .Title }}</a></h2>
 
     {{ partial "post_meta.html" . }}
 
   </header>
 
-  <p>
+  <p itemprop="description">
   {{ .Summary }}
   </p>
 
