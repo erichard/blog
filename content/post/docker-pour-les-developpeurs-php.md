@@ -13,13 +13,13 @@ Un retour d'expérience et un guide de mise en place de Docker pour les dévelop
 
 ## Retour en 2015
 
-Un peu de context pour ceux qui le souhaitent sinon vous pouvez directement passez à la [partie technique](#tech).
+Un peu de contexte pour ceux qui le souhaitent sinon vous pouvez directement passer à la [partie technique](#tech).
 
 Je suis développeur PHP/Symfony à l'agence [Le Phare](http://www.lephare.com/) depuis 2010.
 
 En 2015, notre équipe se compose de huit développeurs et deux intégrateurs. Nous travaillons sur plusieurs nouveaux projets client simultanément et assurons la maintenance évolutive et corrective des projets terminés.
 
-A cette période, nous avions une vingtaine de projets actifs en maintenance et une petite dizaine de projets en cours de réalisation. Environ une trentaine de projets actifs. Chaque développeur garde la charge des projets dont il est le lead developer. Dans les semaines les plus chargés, on peut donc intervenir sur 5 ou 6 projets dans la semaine de travail.
+A cette période, nous avions une vingtaine de projets actifs en maintenance et une petite dizaine de projets en cours de réalisation. Environ une trentaine de projets actifs. Chaque développeur garde la charge des projets dont il est le lead developer. Dans les semaines les plus chargées, on peut donc intervenir sur 5 ou 6 projets dans la semaine de travail.
 
 Les projets sont développés avec Symfony et notre couche Faros avec des prérequis techniques évoluant selon les versions stables de PHP, MySQL et autres services. Parmi la trentaine de projets réalisés avec Symfony, nous avons plusieurs architectures techniques différentes.
 
@@ -30,7 +30,7 @@ Les projets sont développés avec Symfony et notre couche Faros avec des prére
 
 Jusqu'à présent, l'installation, la configuration et la maintenance des postes de dev étaient laissées à la charge des développeurs. Nous avions alors toutes sortes d'installations et d'architectures. Des MAMP, apache/mod-php, apache/php-fpm, des serveurs PHP et même des geeks compilant leur propre PHP !
 
-Evidemment avec une telle organisation nous avons connu quelques plantages en production simplement pour avoir utilisé des fonctionnalités apparues avec PHP 5.5 alors que le serveur de production était en 5.4&hellip; Pour éviter ces problèmes nous avons chercher un moyen pour développer dans un environnement le plus proche des serveurs de production pour chaque projet. Mais comment faire pour installer plusieurs versions de PHP, plusieurs serveurs web et plusieurs bases de données sur la même machine ?
+Evidemment avec une telle organisation nous avons connu quelques plantages en production simplement pour avoir utilisé des fonctionnalités apparues avec PHP 5.5 alors que le serveur de production était en 5.4&hellip; Pour éviter ces problèmes nous avons cherché un moyen pour développer dans un environnement le plus proche des serveurs de production pour chaque projet. Mais comment faire pour installer plusieurs versions de PHP, plusieurs serveurs web et plusieurs bases de données sur la même machine ?
 
 Après avoir essayé Vagrant puis PuPHPet nous avons finalement choisi d'utiliser Docker. Voici un petit guide de survie de Docker en environnement de dev.
 
@@ -112,7 +112,7 @@ Je n'ai mis qu'un seul container de base de données pour simplifier l'exemple.
 
 #### jwilder/nginx-proxy
 
-Ce container est le seul qui écoute sur les ports 80 et 443 de la machine hôte. Il reçoit toutes les requêtes et les transmets au container projet (apache) en fonction de la variable d'environnement `VIRTUAL_HOST` (voir [stack projet](#stack-projet)).
+Ce container est le seul qui écoute sur les ports 80 et 443 de la machine hôte. Il reçoit toutes les requêtes et les transmet au container projet (apache) en fonction de la variable d'environnement `VIRTUAL_HOST` (voir [stack projet](#stack-projet)).
 
 Dans notre configuration nous avons également un certificat SSL auto-signé qui nous permet de configurer n'importe quel projet en HTTPS (voir [stack projet](#stack-projet)).
 
@@ -208,7 +208,7 @@ Le réseau **default** sert à faire communiquer les containers php et Apache, i
 
 ## Conclusion
 
-Docker permet une isolation complète des composants d'une application web. Les concepts peuvent paraîtres complexes au premier coup d'oeil (et ils le sont) mais cela vaut le coup de persévérer et de maîtriser l'outil. Deux ans après nos premiers pas, il n'a jamais été aussi facile de monter un environnement de développement au Phare qui soit aussi proche des conditions de production.
+Docker permet une isolation complète des composants d'une application web. Les concepts peuvent paraître complexes au premier coup d'oeil (et ils le sont) mais cela vaut le coup de persévérer et de maîtriser l'outil. Deux ans après nos premiers pas, il n'a jamais été aussi facile de monter un environnement de développement au Phare qui soit aussi proche des conditions de production.
 
 ## Et après ?
 
