@@ -1,5 +1,5 @@
 ---
-title: "Développeur et vie privée"
+title: "Développeur et défenseur de la vie privée"
 tags: [vie privée, réflexion, métier]
 date: 2017-05-05
 ghcommentid: "3"

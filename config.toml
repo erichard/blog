@@ -19,7 +19,7 @@ enableRobotsTXT = true
     copyright = "Licence [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
     dateFormat = "02/01/2006"
     highlightjs = "androidstudio"
-    custom_css = ["css/my.css"]
+    custom_css = ["css/my.min.css"]
 
 [social]
     github = "erichard"

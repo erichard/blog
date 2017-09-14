@@ -16,12 +16,12 @@
             $("#gh-comments-list").append("Venez sur <strong><a href='" + url + "'>Github</a></strong> pour commenter");
             $.each(comments, function(i, comment) {
                 var date = new Date(comment.created_at);
-                var t = "<div id='gh-comment'>";
+                var t = "<div class='gh-comment'>";
                 t += "<img src='" + comment.user.avatar_url + "' width='24px'>";
                 t += "<b><a href='" + comment.user.html_url + "'>" + comment.user.login + "</a></b>";
                 t += " a écrit le ";
                 t += "<em>" + moment(date).format('LL') + "</em>";
-                t += "<div id='gh-comment-hr'></div>";
+                t += "<div class='gh-comment-hr markdown-body'></div>";
                 t += comment.body_html;
                 t += "</div>";
                 $("#gh-comments-list").append(t);
