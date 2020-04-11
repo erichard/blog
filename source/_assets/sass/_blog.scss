@@ -1,0 +1,58 @@
+// Your custom blog styles here
+
+.comment-html {
+	p:last-child {
+		@apply .mb-0;
+	}
+}
+
+.comment:last-child {
+	@apply .border-0;
+}
+
+main strong {
+	@apply .bg-orange-300;
+	@apply .pt-1;
+	@apply .px-1;
+	@apply .text-orange-900;
+	@apply .border-orange-900;
+	@apply .border-b-2;
+}
+
+main ul {
+	@apply .list-inside;
+	@apply .ml-4;
+	@apply .mb-6;
+	@apply .text-sm;
+	@apply .mt-0;
+	list-style: none;
+}
+
+main li {
+	@apply .m-4;
+	@apply .mt-0;
+    @apply .relative;
+}
+
+main li:before{
+    content: url("/assets/img/check.svg");
+    @apply .absolute;
+    @apply .w-3;
+    @apply .h-3;
+    @apply .text-orange-300;
+    left: -2rem;
+}
+
+.quote:before {
+	content: "🙶";
+	@apply .mr-2;
+	@apply .text-2xl;
+	@apply .text-gray-300;
+}
+
+.quote:after {
+	content: "🙸";
+	@apply .ml-2;
+	@apply .text-2xl;
+	@apply .text-gray-300;
+}
