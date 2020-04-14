@@ -104,7 +104,7 @@ Quelques exemples d'interventions pour cette activité :
 	<ul class="flex-grow">
 		<li>Méthodes agiles</li>
 		<li>Pratique de tests </li>
-		<li>TDD</li>
+		<li><abbr title="Test Driven Developement (Développement piloté par les tests)">TDD</abbr></li>
 	</ul>
 </div>
 
