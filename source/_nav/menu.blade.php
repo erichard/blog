@@ -1,5 +1,5 @@
 <nav class="hidden lg:flex items-center justify-end text-lg">
-    <a title="{{ $page->siteName }} A propos" href="/about"
+    <a href="/about"
         class="ml-6 text-gray-700 hover:text-orange-600 {{ $page->isActive('/about') ? 'active text-orange-600' : '' }}">
         À propos
     </a>

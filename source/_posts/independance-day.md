@@ -114,3 +114,4 @@ Quelques exemples d'interventions pour cette activité :
 Je crois beaucoup dans les valeurs de coopération et de mise en commun et j'ai longuement réfléchi au statut juridique de l'activité que je démarre. J'ai découvert pendant mes recherches le statut d'entrepeneur-salarié au sein des coopératives d'activité et d'emploi. Ce statut et ce mode de fonctionnement possède de nombreux avantages, il permet de conserver la protection sociale du statut de salarié tout en ayant une indépendance totale concernant l'organisation du travail et la rémunération de chacun.
 
 J'espère croiser dans l'avenir d'autres professionnel⋅le⋅s du numérique qui partagent ces valeurs et peut-être créer à plusieurs une coopérative d'indépendants du numérique pour la région nantaise. Avouez que cela donne envie…
+

@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: "Une config Docker performante sous OSX"
-description: Docker sous mac c'est bien mais avec des performances décentes c'est mieux.
+excerpt: Docker sous mac c'est bien mais avec des performances décentes c'est mieux.
 categories: [docker, mac, osx, performance]
 date: 2017-03-23
 ghcommentid: "1"
