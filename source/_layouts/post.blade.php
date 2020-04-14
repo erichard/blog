@@ -4,7 +4,7 @@
     <meta property="og:title" content="{{ $page->title }}" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="{{ $page->description }}" />
+    <meta property="og:description" content="{{ $page->getExcerpt() }}" />
 
     @if ($page->meta_image)
         <meta property="og:image" content="{{ $page->meta_image }}" />
