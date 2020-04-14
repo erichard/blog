@@ -7,7 +7,8 @@ date: 2020-04-11
 excerpt: Mon grand projet 2020, devenir indépendant. 
 featured: true
 ghcommentid: "5"
-cover_image: /assets/img/undraw_digital_nomad_9kgl.svg
+cover_image: /assets/img/freelance.svg
+meta_image: /assets/img/freelance.png
 ---
 
 ## Le Phare

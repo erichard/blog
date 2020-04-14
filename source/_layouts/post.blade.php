@@ -6,8 +6,8 @@
     <meta property="og:url" content="{{ $page->getUrl() }}"/>
     <meta property="og:description" content="{{ $page->description }}" />
 
-    @if ($page->cover_image)
-        <meta property="og:image" content="{{ $page->cover_image }}" />
+    @if ($page->meta_image)
+        <meta property="og:image" content="{{ $page->meta_image }}" />
     @endif
 @endpush
 
