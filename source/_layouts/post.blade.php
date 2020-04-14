@@ -7,7 +7,7 @@
     <meta property="og:description" content="{{ $page->getExcerpt() }}" />
 
     @if ($page->meta_image)
-        <meta property="og:image" content="{{ $page->meta_image }}" />
+        <meta property="og:image" content="{{ $page->baseUrl }}{{ $page->meta_image }}" />
     @endif
 @endpush
 
