@@ -72,7 +72,7 @@ Je vais également proposer un service de **devops**, une activité apparue plus
 
 ## À moyen terme
 
-Dès 2021, j'envisage de lancer une offre de **direction technique en temps partagé**. De nombreuses entreprises et startups n'ont pas les moyens de se payer une direction technique à temps plein et il arrive fréquement que le premier développeur recruté fasse office de <abbr title="Chief Technology Officier = Direction Technique">CTO</abbr>. Ce rôle n'est pourtant pas à prendre à la légère lorsqu'il s'agit de lancer un produit ou un service sur un marché. Je propose donc mes services pour :  
+Dès 2021, j'envisage de lancer une offre de **direction technique en temps partagée**. De nombreuses entreprises et startups n'ont pas les moyens de se payer une direction technique à temps plein et il arrive fréquement que le premier développeur recruté fasse office de <abbr title="Chief Technology Officier = Direction Technique">CTO</abbr>. Ce rôle n'est pourtant pas à prendre à la légère lorsqu'il s'agit de lancer un produit ou un service sur un marché. Je propose donc mes services pour :  
 
 <div class="flex mb-4">
 	<ul class="flex-grow">
