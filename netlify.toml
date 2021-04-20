@@ -3,3 +3,8 @@
 command = "npm run production"
 publish = "build_production"
 environment = { PHP_VERSION = "7.2" }
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "interest-cohort=()."
